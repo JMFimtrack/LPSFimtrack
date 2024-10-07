@@ -31,6 +31,6 @@ export class PortfolioCampaignComponent {
   ];
 
   redirect() {
-    window.location.href = "/buen/2024";
+    window.location.href = "https://jmfimtrack.github.io/buen/2024";
   };
 }
