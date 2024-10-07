@@ -1,0 +1,1 @@
+import{Xa as o,Y as t,Ya as i,eb as a,hb as s}from"./chunk-PSEXQTZA.js";var f=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["buenfin"]],standalone:!0,features:[s],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),a(1,"buenfin works!"),i())}})};export{f as BuenfinComponent};
