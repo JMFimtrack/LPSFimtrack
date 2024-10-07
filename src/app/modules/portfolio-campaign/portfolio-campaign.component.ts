@@ -1,6 +1,7 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'portfolio-campaign',
@@ -13,6 +14,7 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './portfolio-campaign.component.scss'
 })
 export class PortfolioCampaignComponent {
+  private router = inject(Router);
   public title: string = 'Portfolio Campaign';
   public cards: any[] = [
     {
@@ -31,6 +33,6 @@ export class PortfolioCampaignComponent {
   ];
 
   redirect() {
-    window.location.href = "https://jmfimtrack.github.io/buen/2024";
+    this.router.navigate(['/buen/2024'])
   };
 }

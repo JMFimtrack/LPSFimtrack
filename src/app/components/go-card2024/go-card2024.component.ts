@@ -10,7 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './go-card2024.component.scss'
 })
 export class GoCard2024Component {
-  redirect(): void {
-    window.location.href = 'https://www.google.com/';
+  redirect() {
+    window.location.href = "https://www.google.com";
   };
 }
