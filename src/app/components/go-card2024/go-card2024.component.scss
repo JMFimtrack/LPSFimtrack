@@ -1,0 +1,84 @@
+@import '../../../styles.scss';
+
+section {
+  display: grid;
+  grid: auto / 100%;
+  place-content: center;
+  place-items: center;
+
+  width: 100%;
+  height: auto;
+  padding: 160px 0;
+
+  div {
+    width: auto;
+    height: auto;
+
+    border-radius: 16px;
+
+    main {
+      display: grid;
+      grid: repeat(2, auto) / 100%;
+      place-content: center;
+      place-items: center;
+
+      padding: 8px;
+      border-radius: 0 0 16px 16px;
+
+      button{
+        display: grid;
+        grid: repeat(2, auto)  / 100%;
+        place-content: center;
+        place-items: center;
+
+        padding: 60px 40px;
+        border-radius: 50%;
+
+        color: white;
+        background: black;
+        cursor: pointer;
+
+        &:hover {
+          background: DarkSlateGray;
+        }
+        &:active {
+          background: Black;
+        }
+
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+      h3 {
+        font-weight: normal;
+        font-size: 32px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    footer {
+      display: grid;
+      grid: 100% / 100%;
+      place-content: center;
+      place-items: center;
+
+      width: 100%;
+      height: auto;
+      h2 {
+        width: 100%;
+        height: auto;
+
+        font-weight: normal;
+        text-align: center;
+        color: black;
+        span {
+          font-weight: bold;
+          font-size: 64px;
+        }
+      }
+    }
+  }
+}

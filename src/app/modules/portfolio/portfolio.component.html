@@ -1,0 +1,12 @@
+<section>
+  <header>
+    <h1>{{title}}</h1>
+  </header>
+  <nav>
+    @for (card of cards; track card) {
+      <article>
+        <portfolio-campaign/>
+      </article>
+    }
+  </nav>
+</section>
