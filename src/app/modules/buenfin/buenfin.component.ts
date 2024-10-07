@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'buenfin',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './buenfin.component.scss'
 })
 export class BuenfinComponent {
+  private router = inject(Router);
 
+  ngOnInit() {
+    this.router.navigate(['/buen/2024'])
+  };
 }
