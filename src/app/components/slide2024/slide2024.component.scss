@@ -1,0 +1,87 @@
+section {
+  h1 {
+    position: absolute;
+    z-index: 4;
+    top: 80px;
+
+    width: 100%;
+    height: auto;
+
+    font-size: 140px;
+    font-weight: bold;
+    text-align: center;
+
+    color: white;
+    background: none;
+    text-shadow: 0px 20px 22px rgba(65, 105, 225,0.2);
+  }
+  figure {
+    display: grid;
+    grid: 0epat(3, auto) / auto;
+    place-content: start center;
+    place-items: start center;
+    gap: 0;
+
+    width: 100%;
+    height: auto;
+    svg {
+      position: absolute;
+      z-index: 2;
+
+      width: 100%;
+      height: auto;
+      &:first-child {
+        top: 70px;
+      }
+      &:last-child {
+        top: 380px;
+        filter: drop-shadow( 0 6px 4px rgba(0, 0, 0, 0.4));
+      }
+    }
+  }
+  div {
+    display: grid;
+    grid: auto / auto;
+    place-content: center;
+    place-items: center;
+    gap: 46px;
+
+    z-index: 3;
+
+    width: 100%;
+    height: 180px;
+    margin: 180px 0 0 0;
+    background: white;
+    h4 {
+      width: auto;
+      height: auto;
+
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: SteelBlue;
+      &:last-child {
+        display: grid;
+        grid: auto / auto auto;
+        place-content: center;
+        place-items: center;
+        gap: 12px;
+
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
+    button {
+      width: auto;
+      height: auto;
+      background: none;
+      * {
+        width: auto;
+        height: auto;
+
+        color: SteelBlue;
+        background: none;
+      }
+    }
+  }
+}
