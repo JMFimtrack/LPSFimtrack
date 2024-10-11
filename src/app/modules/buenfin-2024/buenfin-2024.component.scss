@@ -1,15 +1,422 @@
 @import '../../../styles.scss';
 
 main {
- display: grid;
- grid: repeat(3, auto) / 100%;
- place-content: center;
- place-items: center;
+  display: grid;
+  grid: repeat(3, auto) / 100%;
+  place-content: start center;
+  place-items: start center;
+  gap: 0;
 
- width: 100%;
- min-height: 100svh;
- section {
   width: 100%;
   height: auto;
- }
+
+  background: SteelBlue;
+
+  &>header {
+    width: 100%;
+    height: auto;
+  }
+  &>section{
+    width: 100%;
+    height: auto;
+  }
+  &>footer{
+    width: 100%;
+    height: 40px;
+
+    background: black;
+  }
+}
+
+header {
+  display: grid;
+  grid: auto / auto;
+  place-content: center;
+  palce-items: center;
+
+  width: 100%;
+  height: 60px;
+
+  background: SteelBlue;
+  nav {
+    display: grid;
+    grid: auto / repeat(6, auto);
+    place-content: end center;
+    palce-items: end center;
+    gap: 48px;
+
+    width: 100%;
+    height: 50px;
+    a {
+      width: auto;
+      height: auto;
+
+      color: white;
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+section:nth-child(2) {
+  h1 {
+    position: absolute;
+    z-index: 4;
+    top: 80px;
+
+    width: 100%;
+    height: auto;
+
+    font-size: 140px;
+    font-weight: bold;
+    text-align: center;
+
+    color: white;
+    background: none;
+    text-shadow: 0px 20px 22px rgba(65, 105, 225,0.2);
+  }
+  figure {
+    display: grid;
+    grid: 0epat(3, auto) / auto;
+    palce-content: start center;
+    palce-items: start center;
+    gap: 0;
+
+    width: 100%;
+    height: auto;
+    svg {
+      position: absolute;
+      z-index: 2;
+
+      width: 100%;
+      height: auto;
+      &:first-child {
+        top: 70px;
+      }
+      &:last-child {
+        top: 380px;
+        filter: drop-shadow( 0 6px 4px rgba(0, 0, 0, 0.4));
+      }
+    }
+  }
+  div {
+    display: grid;
+    grid: auto / auto;
+    place-content: center;
+    place-items: center;
+    gap: 46px;
+
+    z-index: 3;
+
+    width: 100%;
+    height: 180px;
+    margin: 180px 0 0 0;
+    background: white;
+    h4 {
+      width: auto;
+      height: auto;
+
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: SteelBlue;
+      &:last-child {
+        display: grid;
+        grid: auto / auto auto;
+        palce-content: center;
+        palce-items: center;
+        gap: 12px;
+
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
+    button {
+      width: auto;
+      height: auto;
+      background: none;
+      * {
+        width: auto;
+        height: auto;
+
+        color: SteelBlue;
+        background: none;
+      }
+    }
+  }
+}
+
+section:nth-child(3) {
+  display: grid;
+  grid: repeat(4, auto) / 100%;
+  place-content: start center;
+  place-items: start center;
+  gap: 20px 0;
+
+  width: 100%;
+  height: auto;
+  padding: 160px 0 40px 0;
+
+  background: snow;
+
+  &>h2 {
+    width: 100%;
+    height: auto;
+
+    color: SteelBlue;
+    text-align: center;
+  }
+
+  &>hr {
+    width: 96%;
+    height: 1px;
+
+    background: Gainsboro;
+  }
+
+  &>article:nth-child(3) {
+    display: grid;
+    grid: repeat(2, auto) / 100%;
+    place-content: start center;
+    place-items: start center;
+    gap: 32px;
+
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 60px 20px;
+
+    &>h3 {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+
+      font-weight: 500;
+      text-align: center;
+      color: SteelBlue;
+    }
+
+    &>div {
+      display: grid;
+      grid: repeat(2, auto) / 100%;
+      place-content: center;
+      place-items: center;
+      gap: 24px;
+
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+
+      background: white;
+      border-radius: 8px;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+      &>h3 {
+        display: grid;
+        grid: auto / auto 120px;
+        place-content: center;
+        place-items: center;
+        gap: 0;
+
+        width: 360px;
+        height: auto;
+
+        color: SteelBlue;
+        hr {
+          width: 96%;
+          height: 1px;
+
+          background: Gainsboro;
+        }
+
+        span {
+          width: 100%;
+          height: 100%;
+
+          font-weight: 500;
+          &:nth-child(1) {
+            width: 100%;
+            height: 100%;
+
+            font-size: 128px;
+            line-height: 128px;
+          }
+          &:nth-child(2) {
+            display: grid;
+            place-content: center;
+            place-items: center;
+            gap: 8px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &>h4 {
+        //display: grid;
+        //grid: auto / 100%;
+        //place-content: center;
+        //place-items: center;
+        //gap: 0;
+
+        width: 100%;
+        height: auto;
+
+        padding: 0 20px;
+        margin: -16px 0 32px 0;
+
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+
+        strong {
+          width: auto;
+          height: auto;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &>article:nth-child(5) {
+    display: grid;
+    grid: repeat(2, auto) / 100%;
+    place-content: start center;
+    place-items: start center;
+    gap: 32px;
+
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 60px 20px;
+
+    &>h3 {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+
+      font-weight: 500;
+      text-align: center;
+      color: SteelBlue;
+    }
+
+    &>div {
+      display: grid;
+      grid: 320px / repeat(3, 1fr);
+      place-content: center;
+      place-items: center;
+      gap: 16px;
+
+      width: 100%;
+      height: auto;
+      padding: 0 20px;
+      &>article {
+        display: grid;
+        grid: repeat(2, 1fr) / 100%;
+        place-content: start center;
+        place-items: start center;
+        gap: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: white;
+        border-radius: 8px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        &>figure {
+          display: grid;
+          grid: 100% / 100%;
+          place-content: center;
+          place-items: center;
+
+          width: 100%;
+          height: 100%;
+          background: SteelBlue;
+
+          border-radius: 8px 8px 0 0;
+          &>p {
+            color: white;
+          }
+        }
+        &>h4 {
+          display: grid;
+          grid: auto auto / 100%;
+          place-content: start;
+          place-items: start;
+          gap: 0;
+
+          width: 100%;
+          height: 100%;
+
+          font-weight: normal;
+          &>span {
+            width: 100%;
+            height: auto;
+
+            font-weight: 500;
+            padding: 16px;
+          }
+          &>p {
+            width: 100%;
+            height: auto;
+
+            font-weight: 400;
+            font-size: 12px;
+            padding: 0 16px;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: auto;
+    height: auto;
+
+    padding: 20px 40px;
+    margin: 60px 20px;
+
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: SteelBlue;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    &:hover {
+      background: LightSteelBlue;
+      cursor: pointer;
+    }
+    &:focus {
+      background: SteelBlue;
+      cursor: auto;
+    }
+  }
+}
+
+section:nth-child(4) {
+  width: 100%;
+  height: auto;
+
+  padding: 40px 20px;
+
+  background: SteelBlue;
+  &>ul {
+    display: grid;
+    grid: repeat(2, auto) / repeat(3, 1fr);
+    palce-content: center;
+    palce-items: center;
+    gap: 24px;
+
+    width: 100%;
+    height: auto;
+    li {
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+
+      background: white;
+      border-radius: 8px;
+    }
+  }
 }
