@@ -1,4 +1,6 @@
 section {
+  width: 100%;
+  height: auto;
   h1 {
     position: absolute;
     z-index: 4;
@@ -41,14 +43,14 @@ section {
   }
   div {
     display: grid;
-    grid: auto / auto;
+    grid: auto / 100%;
     place-content: center;
     place-items: center;
     gap: 46px;
 
     z-index: 3;
 
-    width: 100%;
+    width: 100svw;
     height: 180px;
     margin: 180px 0 0 0;
     background: white;
